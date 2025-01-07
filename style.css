@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Poppins", sans-serif;
+}
+
+.title-container {
+    background: hsla(59, 86%, 68%, 1);
+
+    background: linear-gradient(90deg, hsla(59, 86%, 68%, 1) 0%, hsla(134, 36%, 53%, 1) 100%);
+
+    background: -moz-linear-gradient(90deg, hsla(59, 86%, 68%, 1) 0%, hsla(134, 36%, 53%, 1) 100%);
+
+    background: -webkit-linear-gradient(90deg, hsla(59, 86%, 68%, 1) 0%, hsla(134, 36%, 53%, 1) 100%);
+
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#F4F269", endColorstr="#5CB270", GradientType=1);
+
+    padding: 20px 0;
+    height: 80px;
+}
+
+.title-container h1 {
+    font-weight: 600;
+    font-size: 32px;
+    background: hsla(175, 79%, 63%, 1);
+
+    background: hsla(270, 94%, 25%, 1);
+
+    background: linear-gradient(90deg, hsla(270, 94%, 25%, 1) 0%, hsla(158, 94%, 49%, 1) 100%);
+
+    background: -moz-linear-gradient(90deg, hsla(270, 94%, 25%, 1) 0%, hsla(158, 94%, 49%, 1) 100%);
+
+    background: -webkit-linear-gradient(90deg, hsla(270, 94%, 25%, 1) 0%, hsla(158, 94%, 49%, 1) 100%);
+
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#42047E", endColorstr="#07F49E", GradientType=1);
+
+    -webkit-background-clip: text;
+    color: transparent;
+    text-align: center;
+}
+
+.button-container {
+    height: 20vh;
+    display: grid;
+    place-items: center;
+}
+
+.button-container button {
+    padding: 10px 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(45deg, #ffeb3b, #4caf50);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.button-container button:hover {
+    background: linear-gradient(45deg, #4caf50, #ffeb3b);
+    box-shadow: 0 0 20px #ffeb3b, 0 0 30px #4caf50;
+    transform: scale(1.1);
+}
+
+.button-container button:active{
+    transform: scale(1);
+    box-shadow: 0 0 10px #ffeb3b;
+}
+
+.colors-container{
+    height: calc(80vh - 80px);
+    display: grid;
+    grid-template-rows: 5fr 4fr 3fr 2fr;
+}
+
+.colorbox p{
+    background-color: rgb(184, 181, 181);
+    width: 100px;
+    padding: 5px;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 15px;
+    display: none;
+    cursor: pointer;
+}
+
+.colorbox:hover P{
+    display: inline-block;
+}
+
+#color1{
+    background-color: red;
+}
+#color2{
+    background-color: blue;
+}
+#color3{
+    background-color: green;
+}
+#color4{
+    background-color: yellow;
+}
+
+/* media query */
+@media (max-width: 425px){
+    .title-container h1{
+        font-size: 24px;
+    }
+
+    .button-container button{
+        font-size: 20px;
+    }
+}
+
+@media (max-width:375px){
+    .title-container h1{
+        font-size: 21px;
+    }
+
+    .title-container{
+        padding: 15px 0;
+        height: 60px;
+    }
+
+    .button-container button{
+        font-size: 18px;
+    }
+
+    .colors-container{
+        height: calc(80vh - 38px);
+    }
+
+    .button-container{
+        height: 16vh;
+    }
+}
+
+@media (max-width:320px){
+    .title-container h1{
+        font-size: 19px;
+    }
+
+    .button-container button{
+        font-size: 16px;
+    }
+}
